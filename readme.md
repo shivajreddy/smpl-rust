@@ -1,4 +1,3 @@
-
 ### What is this repo for?
 This repo is my journey into getting good at Rust.  
 My goal as a programmer is to go deeper into topics and work on complex projects,  
