@@ -90,7 +90,5 @@ impl Widget for &App {
 
 fn main() -> io::Result<()> {
     println!("Learning Ratatui");
-    // let app = App::default();
-
     ratatui::run(|terminal| App::default().run(terminal))
 }
