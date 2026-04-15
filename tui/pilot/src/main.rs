@@ -39,11 +39,12 @@ impl App {
     fn decrement_counter(&mut self) {
         self.counter -= 1;
     }
+
     fn handle_key_event(&mut self, key_event: KeyEvent) {
         match key_event.code {
-            KeyCode::Char('q') => self.exit(),
-            KeyCode::Left => self.decrement_counter(),
-            KeyCode::Right => self.increment_counter(),
+            KeyCode::Esc | KeyCode::Char('q') => self.exit(),
+            KeyCode::Char('j') | KeyCode::Char('h') | KeyCode::Left => self.decrement_counter(),
+            KeyCode::Char('k') | KeyCode::Char('l') | KeyCode::Right => self.increment_counter(),
             _ => {}
         }
     }
