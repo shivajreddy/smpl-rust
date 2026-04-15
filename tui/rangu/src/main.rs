@@ -6,13 +6,6 @@ use ratatui::{
     widgets::Widget,
 };
 
-// fn handle_keys(event: KeyEvent,) {
-//     match event {
-//         KeyCode::Esc =>
-//         _ => {}
-//     }
-// }
-
 fn run_app() -> anyhow::Result<()> {
     println!("FPS & color boxes");
     // let f = ratatui::Frame::count(&self)
