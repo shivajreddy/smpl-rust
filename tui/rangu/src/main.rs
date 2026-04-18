@@ -11,11 +11,7 @@ fn foo(flag: bool) -> Block<'static> {
 }
 
 fn run_app() -> anyhow::Result<()> {
-    println!("FPS & color boxes");
-    // let f = ratatui::Frame::count(&self)
-
     let mut flag = true;
-
     ratatui::run(|terminal| {
         loop {
             terminal.draw(|frame| frame.render_widget(foo(flag), frame.area()))?;
